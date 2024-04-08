@@ -7,8 +7,5 @@ while not verif:
 
 for num in range(1, n+1):
   num = str(num)
-  sum = 0
-  for j in num:
-    sum += int(j)
-  if sum == int(num[0]) * len(num):
+  if num == num[::-1]:
     print(num, end = " ")
